@@ -1,32 +1,33 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% author: andywiecko                        %
-% project: multilanguage LaTeX CV template  %
-% version: v1.0                             %
-% site: andywiecko.github.io                %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[polish]{CV}
+\documentclass[english]{CV}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{polski}
+\usepackage[T1]{fontenc}
 
 % good looking fonts
-%\usepackage{times}
-%\usepackage{roboto}
-\usepackage{tgadventor}
+\usepackage{roboto}
+\usepackage{noto}
 
 \begin{document}
 
 \personalData
 \input{Matter/contact.tex}
 
+\summary
+\input{Matter/summary.tex}
+
+\experience
+\input{Matter/experience.tex}
+
+\projects
+\input{Matter/projects.tex}
+
+\skills
+\input{Matter/skills.tex}
+
 \education
 \input{Matter/education.tex}
 
 \internships
 \input{Matter/internships.tex}
-
-\experience
-\input{Matter/experience.tex}
 
 \publications
 \bibliographystyle{unsrt}
@@ -39,17 +40,12 @@
 \scholarships
 \input{Matter/scholarships.tex}
 
-\projects
-\input{Matter/projects.tex}
-
-\skills
-\input{Matter/skills.tex}
-
 \certificates
 \input{Matter/certificates.tex}
 
 \hobbies
 \input{Matter/hobbies.tex}
 
-\footer{\GDPR}
+% consent to processing of personal data
+% \footer{\GDPR}
 \end{document}
